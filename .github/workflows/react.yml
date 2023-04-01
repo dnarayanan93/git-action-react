@@ -1,0 +1,13 @@
+name: React Project
+on: 
+  pull_request:
+    types: 
+      - opened
+  workflow_dispatch:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Code
+        uses:
+
